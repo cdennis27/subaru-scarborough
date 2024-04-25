@@ -318,6 +318,7 @@ body {
 
   .container {
     border: rgb(0, 173, 0) 0px solid;
+    padding: 0px 5px 0px 5px;
   }
 
   .footer a {

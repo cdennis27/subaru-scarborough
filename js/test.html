@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The getAttribute() Method</h2>
+
+Learn more about the <a id="myAnchor" href="dom_obj_attributes.asp" autoplay="true">Attr object</a>.
+
+<p>The value of the target attribute of the link above is:</p>
+
+<p id="demo"></p>
+
+<script>
+const myAnchor = document.getElementById("myAnchor") 
+//debugger;
+let text = myAnchor.getAttribute("autoplay");
+console.log(text);
+document.getElementById("myAnchor").removeAttribute("autoplay");
+console.log("text: " + text);
+text = myAnchor.getAttribute("autoplay");
+document.getElementById("demo").innerHTML = text;
+</script>
+<script>
+    document.getElementById("demo").innerHTML = 
+    "Screen width is " + screen.width;
+    </script>
+
+</body>
+</html>

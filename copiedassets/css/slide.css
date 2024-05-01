@@ -1,0 +1,343 @@
+.car-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 0px solid #cf03ef;
+}
+
+.car-image {
+    height: 100%;
+    width: 100%;
+    border-bottom: 0px solid #06fc0e;
+}
+
+.car-image:hover {
+    cursor: pointer;
+}
+
+.slidesContainer {
+    display: flex;
+    border: rgb(62, 9, 234) 0px solid;
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.slidesContainerSquare {
+    display: flex;
+    border: rgb(62, 9, 234) 0px solid;
+    width: 450px;
+    height: 650px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    
+    
+    height: 100%;
+    border: blue 0px solid;
+
+}
+
+.slide {
+    display: block;
+    min-height: 350px;
+    height: 350px;
+    width: 450px;
+    position: relative;
+    border: orange 0px solid;
+    padding: 0px;
+}
+
+.slideSquare {
+    display: block;
+    min-height: 450px;
+    height: 450px;
+    width: 450px;
+    position: relative;
+    border: orange 0px solid;
+    padding: 0px;
+}
+
+
+
+.slide img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide-controls-left {
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    transform: translateY(-50%);
+    
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:rgb(255, 0, 0) 0px solid;
+    border-radius: 100%;
+}
+
+.slide-controls-right {
+    position: absolute;
+    top: 25%;
+    right: 5px;
+    transform: translateY(-50%);
+    
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:rgb(255, 0, 0) 0px solid;
+    border-radius: 100%;
+}
+
+#next-btn,
+#prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 3px 10px 2px 10px;
+    color: rgb(0, 0, 0);
+    border: green 0px solid;
+    border-radius: 100%;
+    
+    background-color: #2b8dfd;
+}
+
+#next-btn:focus,
+#prev-btn:focus {
+    outline: none;
+}
+
+.slide-content {
+    position: absolute;
+    top: 315px;
+    left: 5px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: #06fc0e 0px solid;
+    background: rgb(118, 175, 255);
+    padding: 3px 10px 3px 10px;
+}
+
+.car-details {
+    flex: 1;
+    padding: 5px;
+    border: red 0px solid;
+}
+
+.car-details h2 {
+    margin-top: 0;
+    margin: 0;
+}
+
+.car-details p {
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media screen and (max-width: 520px) {
+    .slidesContainer {
+        width: 400px;
+        height: 520px;
+    }
+
+    .slidesContainerSquare {
+        
+        height: 600px;
+        
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slide {
+
+        height: 270px;
+        width: 400px;
+    }
+
+    .slide img {
+        height: 90%;
+    }
+
+    .slide-content {
+        top: 280px;
+    }
+    #prev-btn, #next-btn {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .slidesContainer {
+        width: 370px;
+        height: 460px;
+    }
+
+    .slidesContainerSquare {
+        
+        height: 550px;
+        
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slide {
+        width: 370px;
+        height: 270px;
+
+    }
+
+    .slide img {
+        height: 80%;
+    }
+
+    .slide-content {
+        top: 250px;
+    }
+
+    .slide-content p{
+        font-size: 80%;
+    }
+
+    .car-details h2{
+        font-size: 1.2rem;
+    }
+
+    .car-details p{
+        font-size: 80%;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 388px) {
+    .slidesContainer {
+        width: 320px;
+        height: 430px;
+    }
+
+    .slidesContainerSquare {
+        
+        height: 490px;
+        
+    }
+
+    .slides {
+        height: 100%;
+        
+    }
+
+    .slide {
+        width: 320px;
+        height: 270px;
+
+    }
+
+    .slide img {
+        height: 70%;
+        min-width: 100%;
+    }
+
+    .slide-content {
+        top: 215px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 350px) {
+    .slidesContainer {
+        width: 290px;
+        height: 410px;
+    }
+
+    .slidesContainerSquare {
+        height: 460px;
+        
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slide {
+        width: 290px;
+        height: 270px;
+
+    }
+
+    .slide img {
+        height: 63%;
+    }
+
+    .slide-content {
+        top: 190px;
+    }
+
+    
+}
+
+@media screen and (max-width: 310px) {
+    .slidesContainer {
+        width: 250px;
+        height: 380px;
+    }
+
+    .slidesContainerSquare {
+        height: 420px;
+    }
+
+    .slides {
+        height: 100%;
+    }
+
+    .slide {
+        width: 250px;
+        height: 270px;
+
+    }
+
+    .slide img {
+        height: 55%;
+    }
+
+    .slide-content {
+        top: 160px;
+
+    }
+
+    
+
+    .car-details p{
+        font-size: 80%;
+    }
+
+    
+}
